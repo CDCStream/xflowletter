@@ -1,0 +1,35 @@
+# X Flow Teller
+
+> A Chrome extension that reads your X (Twitter) feed aloud — 35 languages with native voices, 100% local, no cloud API.
+
+## What it does
+
+X Flow Teller reads posts on X (formerly Twitter) out loud, one by one, using your browser's built-in text-to-speech engine. It auto-detects the language of each post and selects the appropriate native voice. When visible posts run out, the page scrolls automatically to load more.
+
+## Supported languages (35)
+
+English, Turkish, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Czech, Romanian, Hungarian, Swedish, Norwegian, Danish, Finnish, Russian, Ukrainian, Serbian, Greek, Arabic, Hebrew, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Thai, Vietnamese, Indonesian, Japanese, Korean, Chinese. All other languages are read with an English voice.
+
+## How it works
+
+1. Install the extension from the Chrome Web Store.
+2. Open X (x.com or twitter.com).
+3. A floating control panel appears at the bottom-right.
+4. Press Play — posts are read aloud while the page scrolls automatically.
+
+## Pricing
+
+- Free tier: 10 reads per day, no sign-up required.
+- Lifetime license: $5 one-time payment for unlimited reads.
+
+## Privacy
+
+- No data leaves your browser. All speech synthesis runs locally.
+- No analytics, tracking, or third-party scripts.
+- License keys are validated via Polar.sh; no personal data is transmitted.
+
+## Links
+
+- Website: https://xflowteller.com
+- Privacy Policy: https://xflowteller.com/privacy
+- Terms of Service: https://xflowteller.com/terms

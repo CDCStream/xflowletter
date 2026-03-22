@@ -1,0 +1,45 @@
+══════════════════════════════════════════════════════
+  CHROME WEB STORE — LISTING DETAILS
+  Copy-paste these into the Developer Dashboard
+══════════════════════════════════════════════════════
+
+─── NAME ───
+X Flow Teller — Read X Posts Aloud
+
+─── SHORT DESCRIPTION (132 chars max) ───
+Reads your X (Twitter) feed aloud with 35 native-speaker voices. Hands-free, 100% local, no cloud API. Works offline.
+
+─── DETAILED DESCRIPTION ───
+X Flow Teller reads your X (Twitter) timeline out loud — post by post, hands-free, in 35 languages with native-speaker voices.
+
+HOW IT WORKS
+1. Install the extension and open X (x.com or twitter.com).
+2. A floating control panel appears at the bottom-right of the page.
+3. Press Play. Posts are read aloud one by one while the page scrolls automatically.
+4. Press Skip to jump to the next post, or Pause / Stop anytime.
+
+FEATURES
+• 35 native-speaker voices — auto-detects English, Turkish, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Czech, Romanian, Hungarian, Swedish, Norwegian, Danish, Finnish, Russian, Ukrainian, Serbian, Greek, Arabic, Hebrew, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Thai, Vietnamese, Indonesian, Japanese, Korean, and Chinese. All other languages are read with an English voice.
+• 100% local & private — no data leaves your browser. All speech synthesis runs locally via the Web SpeechSynthesis API.
+• Infinite scroll reading — when visible posts run out, the page scrolls automatically to load more.
+• Smart skip — skip any post with one click. Video-only and promoted posts are filtered automatically.
+• Hands-free — hit Play and walk away. Cook dinner, exercise, or commute while staying up to date.
+
+PRICING
+• Free tier: 10 reads per day, no sign-up required.
+• Lifetime license: $5 one-time payment for unlimited reads. Buy at xflowteller.com.
+
+PRIVACY
+X Flow Teller does not collect, store, or transmit any personal data. See our full privacy policy at https://xflowteller.com/privacy.
+
+─── CATEGORY ───
+Productivity
+
+─── LANGUAGE ───
+English
+
+─── PRIVACY POLICY URL ───
+https://xflowteller.com/privacy
+
+─── WEBSITE ───
+https://xflowteller.com

@@ -1,0 +1,19 @@
+{
+  "name": "5)-xflowteller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@diffusionstudio/piper-wasm": "^1.0.0",
+    "piper-tts-web": "^1.1.2"
+  },
+  "devDependencies": {
+    "piper-wasm": "^0.1.4"
+  }
+}
