@@ -3,7 +3,7 @@ import { WaveHero } from "@/components/ui/wave-hero";
 import { MockTweet } from "@/components/ui/mock-tweet";
 import { LanguagePopup } from "@/components/ui/language-popup";
 
-const CHECKOUT_URL = "/api/checkout?products=ff357f59-bae0-4fb6-be8b-9bb670669e4e";
+const CHECKOUT_URL = "/api/checkout?products=27e3f6a1-fc03-4754-a7c6-88cc272cd01b";
 
 const features = [
   {
