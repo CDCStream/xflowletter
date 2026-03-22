@@ -20,8 +20,10 @@ export async function GET(req: NextRequest) {
 
   if (!res.ok) {
     const text = await res.text();
-    console.error("Polar checkout error:", res.status, text);
-    return NextResponse.json({ error: "Checkout failed" }, { status: 502 });
+    return NextResponse.json(
+      { error: "Checkout failed", status: res.status, detail: text },
+      { status: 502 }
+    );
   }
 
   const data = await res.json();
