@@ -41,6 +41,11 @@ export default function RootLayout({
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
         </Script>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="euGCCJjNf72DZ3107nu3WA"
+          strategy="afterInteractive"
+        />
       </head>
       <body>{children}</body>
     </html>
