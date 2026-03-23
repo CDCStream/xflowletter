@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "X Flow Teller — Read X Posts Aloud",
   description:
     "Listen to your X (Twitter) feed hands-free. X Flow Teller reads posts aloud with multi-language support — offline, zero-cost, no cloud API.",
+  verification: {
+    google: "eypqi9p_AYWrLARYN3hndxrQT8DBfc3SZArzvNdNjPY",
+  },
   openGraph: {
     title: "X Flow Teller — Read X Posts Aloud",
     description:
