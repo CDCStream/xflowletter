@@ -20,27 +20,39 @@ export default function SuccessPage() {
         </div>
         <h1 className="mb-4 text-3xl font-extrabold">Thank you!</h1>
         <p className="mb-6 text-[var(--muted)]">
-          Your license key has been sent to your email. Open the X Flow Teller
-          panel on X, click the <strong>FREE</strong> badge, and paste your key
-          to activate unlimited reads.
+          Your license key has been sent to your email. Follow the steps below
+          to install and activate unlimited reads.
         </p>
         <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-left text-sm text-[var(--muted)]">
           <p className="mb-3 font-semibold text-[var(--text)]">Quick Start:</p>
-          <ol className="list-inside list-decimal space-y-2">
+          <ol className="list-inside list-decimal space-y-3">
             <li>Check your email for the license key</li>
+            <li>
+              <a
+                href="https://chromewebstore.google.com"
+                className="text-[#1d9bf0] hover:underline font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Install X Flow Teller from Chrome Web Store
+              </a>
+            </li>
             <li>
               Go to{" "}
               <a
                 href="https://x.com"
                 className="text-[#1d9bf0] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 x.com
-              </a>
+              </a>{" "}
+              — the extension panel will appear at the bottom-right
             </li>
             <li>
-              Click the <strong>FREE</strong> badge on the X Flow Teller panel
+              Click the <strong>FREE</strong> badge on the panel
             </li>
-            <li>Paste your key and click Activate</li>
+            <li>Paste your license key and click Activate</li>
           </ol>
         </div>
         <Link
