@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "X Flow Teller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read X (Twitter) posts aloud — zero-cost, offline-friendly, no cloud API.",
   "homepage_url": "https://xflowteller.com",
   "icons": {
@@ -9,7 +9,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["storage", "scripting", "activeTab", "offscreen"],
+  "permissions": ["storage", "activeTab", "offscreen"],
   "host_permissions": [
     "https://x.com/*",
     "https://twitter.com/*",
