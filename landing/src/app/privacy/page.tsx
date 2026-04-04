@@ -77,9 +77,9 @@ export default function PrivacyPage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              <strong className="text-[var(--text)]">activeTab / host permissions (x.com, twitter.com):</strong>{" "}
-              Required to read tweet text from the page so it can be spoken
-              aloud.
+              <strong className="text-[var(--text)]">Host permissions (x.com, twitter.com):</strong>{" "}
+              Required so the extension can inject its script on X and read
+              tweet text to speak aloud.
             </li>
             <li>
               <strong className="text-[var(--text)]">storage:</strong>{" "}
