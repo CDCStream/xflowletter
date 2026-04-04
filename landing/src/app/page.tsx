@@ -19,12 +19,12 @@ const features = [
   {
     icon: "⏭️",
     title: "Smart Skip",
-    desc: "Skip any post with one click. Ads and video-only posts are filtered out.",
+    desc: "Skip any post with one click. Posts without visible text are skipped. Not affiliated with X Corp.",
   },
   {
     icon: "🔒",
-    title: "100% Local & Private",
-    desc: "No cloud API, no data sent anywhere. Everything runs in your browser.",
+    title: "Local TTS, clear licensing",
+    desc: "Speech uses Chrome built-in engine in your browser. License activation contacts Polar.sh over HTTPS only for your key.",
   },
   {
     icon: "♾️",
@@ -119,7 +119,10 @@ export default function Home() {
             <LanguagePopup>
               <span className="text-white font-semibold">35 languages with native voices</span>
             </LanguagePopup>,
-            all others read with an English voice. Hands-free, 100% local, no cloud API.
+            all others read with an English voice. Hands-free; speech stays in your browser.{" "}
+            <span className="text-[var(--muted)] text-sm block mt-2">
+              Not affiliated with X Corp. Optional license uses Polar.sh (see Privacy).
+            </span>
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -260,6 +263,9 @@ export default function Home() {
           >
             xflowteller.com
           </a>
+        </p>
+        <p className="mx-auto mt-3 max-w-lg text-xs">
+          X Flow Teller is not affiliated with, endorsed by, or sponsored by X Corp. or Twitter.
         </p>
       </footer>
     </main>

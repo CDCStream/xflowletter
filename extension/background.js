@@ -35,7 +35,7 @@ async function ensureOffscreen() {
     await chrome.offscreen.createDocument({
       url: "offscreen.html",
       reasons: ["AUDIO_PLAYBACK"],
-      justification: "Local Piper TTS synthesis and playback for X Flow Teller",
+      justification: "Play text-to-speech audio from an offscreen document (Chrome SpeechSynthesis API).",
     });
     console.log("[XFT bg] Offscreen document created");
   } catch (e) {

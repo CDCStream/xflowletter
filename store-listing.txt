@@ -7,30 +7,31 @@
 X Flow Teller — Read X Posts Aloud
 
 ─── SHORT DESCRIPTION (132 chars max) ───
-Reads your X (Twitter) feed aloud with 35 native-speaker voices. Hands-free, 100% local, no cloud API. Works offline.
+Reads your X feed aloud with Chrome voices, 35 language hints. TTS runs locally; license checks use Polar.sh.
 
 ─── DETAILED DESCRIPTION ───
-X Flow Teller reads your X (Twitter) timeline out loud — post by post, hands-free, in 35 languages with native-speaker voices.
+X Flow Teller reads your X (formerly Twitter) timeline out loud — post by post, hands-free. Speech uses your browser’s built-in text-to-speech (Web Speech API), not a cloud TTS service.
+
+NOT AFFILIATED: This extension is not affiliated with, endorsed by, or sponsored by X Corp. or Twitter.
 
 HOW IT WORKS
-1. Install the extension and open X (x.com or twitter.com).
-2. A floating control panel appears at the bottom-right of the page.
-3. Press Play. Posts are read aloud one by one while the page scrolls automatically.
-4. Press Skip to jump to the next post, or Pause / Stop anytime.
+1. Install the extension and open x.com or twitter.com.
+2. A floating control panel appears at the bottom-right.
+3. Press Play. Posts with visible text are read one by one; the page may scroll to load more.
+4. Use Skip on a post to skip it, or Pause / Stop anytime.
 
 FEATURES
-• 35 native-speaker voices — auto-detects English, Turkish, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Czech, Romanian, Hungarian, Swedish, Norwegian, Danish, Finnish, Russian, Ukrainian, Serbian, Greek, Arabic, Hebrew, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Thai, Vietnamese, Indonesian, Japanese, Korean, and Chinese. All other languages are read with an English voice.
-• 100% local & private — no data leaves your browser. All speech synthesis runs locally via the Web SpeechSynthesis API.
-• Infinite scroll reading — when visible posts run out, the page scrolls automatically to load more.
-• Smart skip — skip any post with one click. Video-only and promoted posts are filtered automatically.
-• Hands-free — hit Play and walk away. Cook dinner, exercise, or commute while staying up to date.
+• Multi-language voices — heuristics suggest a language for Chrome’s voices; many languages are supported where the OS/browser provides voices; others fall back to English.
+• Local speech synthesis — audio is generated in your browser via the Web SpeechSynthesis API. Tweet text is not sent to a third-party TTS API.
+• Optional license — free tier with a daily read limit; purchase a lifetime license at xflowteller.com. Activating a key contacts api.polar.sh over HTTPS (license key only for that request).
+• Infinite-style reading — when no new unread posts are visible, the extension scrolls to try to load more.
 
 PRICING
-• Free tier: 10 reads per day, no sign-up required.
-• Lifetime license: $5 one-time payment for unlimited reads. Buy at xflowteller.com.
+• Free tier: limited reads per day, no sign-up required.
+• Lifetime license: one-time payment for unlimited reads at xflowteller.com.
 
 PRIVACY
-X Flow Teller does not collect, store, or transmit any personal data. See our full privacy policy at https://xflowteller.com/privacy.
+Tweet content is processed locally for speech. License activation/validation uses Polar.sh as described on https://xflowteller.com/privacy
 
 ─── CATEGORY ───
 Productivity
@@ -43,3 +44,16 @@ https://xflowteller.com/privacy
 
 ─── WEBSITE ───
 https://xflowteller.com
+
+─── GİZLİLİK SEKMESİ — İZİN GEREKÇELERİ (ÖRNEK) ───
+
+storage: Saves license state and daily free-tier counter in chrome.storage.sync.
+
+offscreen: Hosts SpeechSynthesis in a hidden document (required for reliable TTS from the service worker flow).
+
+Host x.com / twitter.com: Injects the reader UI and reads visible post text on those sites only.
+
+Host api.polar.sh: HTTPS requests only to activate and validate license keys with Polar.sh.
+
+─── TEK AMAÇ (single purpose) ───
+Reads aloud the text of posts on X (Twitter) in the browser using Chrome’s built-in text-to-speech, with optional paid unlock via Polar.sh.
