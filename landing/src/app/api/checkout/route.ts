@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { SITE_URL } from "@/lib/site";
 
 export async function GET(req: NextRequest) {
   const productId = req.nextUrl.searchParams.get("products");
@@ -14,7 +15,7 @@ export async function GET(req: NextRequest) {
     },
     body: JSON.stringify({
       products: [productId],
-      success_url: "https://xflowteller.com/success",
+      success_url: `${SITE_URL}/success`,
     }),
   });
 

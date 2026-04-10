@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const GA_ID = "G-560S234T81";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "X Flow Teller — Read X Posts Aloud",
   description:
     "Listen to your X (Twitter) feed hands-free. X Flow Teller reads posts aloud with multi-language support — offline, zero-cost, no cloud API.",
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
     title: "X Flow Teller — Read X Posts Aloud",
     description:
       "Listen to your X feed hands-free. Multi-language TTS, infinite scroll, one-time $5.",
-    url: "https://xflowteller.com",
+    url: SITE_URL,
     siteName: "X Flow Teller",
     type: "website",
   },
