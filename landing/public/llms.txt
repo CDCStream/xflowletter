@@ -12,7 +12,7 @@ English, Turkish, French, German, Spanish, Portuguese, Italian, Dutch, Polish, C
 
 ## How it works
 
-1. Install the extension from the Chrome Web Store.
+1. Install the extension from the Chrome Web Store: https://chromewebstore.google.com/detail/x-flow-teller/oomijkgjdjofkoobnocfclpldhailjpg
 2. Open X (x.com or twitter.com).
 3. A floating control panel appears at the bottom-right.
 4. Press Play — posts are read aloud while the page scrolls automatically.
@@ -31,5 +31,6 @@ English, Turkish, French, German, Spanish, Portuguese, Italian, Dutch, Polish, C
 ## Links
 
 - Website: https://xflowteller.com
+- Chrome Web Store: https://chromewebstore.google.com/detail/x-flow-teller/oomijkgjdjofkoobnocfclpldhailjpg
 - Privacy Policy: https://xflowteller.com/privacy
 - Terms of Service: https://xflowteller.com/terms

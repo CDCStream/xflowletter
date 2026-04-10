@@ -2,6 +2,7 @@ import Image from "next/image";
 import { WaveHero } from "@/components/ui/wave-hero";
 import { MockTweet } from "@/components/ui/mock-tweet";
 import { LanguagePopup } from "@/components/ui/language-popup";
+import { CHROME_WEB_STORE_URL } from "@/lib/site";
 
 const CHECKOUT_URL = "/api/checkout?products=27e3f6a1-fc03-4754-a7c6-88cc272cd01b";
 
@@ -42,7 +43,8 @@ const steps = [
   {
     num: "1",
     title: "Install Extension",
-    desc: "Add X Flow Teller to Chrome from the Chrome Web Store.",
+    desc: "",
+    storeUrl: CHROME_WEB_STORE_URL,
   },
   {
     num: "2",
@@ -164,7 +166,24 @@ export default function Home() {
                 {s.num}
               </div>
               <h3 className="mb-2 text-lg font-semibold">{s.title}</h3>
-              <p className="text-sm text-[var(--muted)]">{s.desc}</p>
+              <p className="text-sm text-[var(--muted)]">
+                {"storeUrl" in s && s.storeUrl ? (
+                  <>
+                    Add X Flow Teller from the{" "}
+                    <a
+                      href={s.storeUrl}
+                      className="font-medium text-[#1d9bf0] hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Chrome Web Store
+                    </a>
+                    .
+                  </>
+                ) : (
+                  s.desc
+                )}
+              </p>
             </div>
           ))}
         </div>

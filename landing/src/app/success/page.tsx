@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CHROME_WEB_STORE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "Thank You — X Flow Teller",
@@ -29,7 +30,7 @@ export default function SuccessPage() {
             <li>Check your email for the license key</li>
             <li>
               <a
-                href="https://chromewebstore.google.com"
+                href={CHROME_WEB_STORE_URL}
                 className="text-[#1d9bf0] hover:underline font-medium"
                 target="_blank"
                 rel="noopener noreferrer"
