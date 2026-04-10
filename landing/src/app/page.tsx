@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { WaveHero } from "@/components/ui/wave-hero";
 import { MockTweet } from "@/components/ui/mock-tweet";
 import { LanguagePopup } from "@/components/ui/language-popup";
-import { CHROME_WEB_STORE_URL } from "@/lib/site";
+import { CHROME_WEB_STORE_URL, SITE_URL } from "@/lib/site";
 
 const CHECKOUT_URL = "/api/checkout?products=27e3f6a1-fc03-4754-a7c6-88cc272cd01b";
 
@@ -277,11 +278,22 @@ export default function Home() {
         <p>
           &copy; {new Date().getFullYear()} X Flow Teller &middot;{" "}
           <a
-            href="https://xflowteller.com"
+            href={SITE_URL}
             className="transition hover:text-[#1d9bf0]"
           >
             xflowteller.com
           </a>
+          {" · "}
+          <Link
+            href="/privacy"
+            className="transition hover:text-[#1d9bf0]"
+          >
+            Privacy Policy
+          </Link>
+          {" · "}
+          <Link href="/terms" className="transition hover:text-[#1d9bf0]">
+            Terms of Service
+          </Link>
         </p>
         <p className="mx-auto mt-3 max-w-lg text-xs">
           X Flow Teller is not affiliated with, endorsed by, or sponsored by X Corp. or Twitter.
